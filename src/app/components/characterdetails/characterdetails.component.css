@@ -1,0 +1,25 @@
+.details-page {
+  padding-top: 10px;
+}
+
+.details-card {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.details-layout {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.details-layout img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.info {
+  flex: 1;
+  min-width: 250px;
+}

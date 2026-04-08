@@ -1,0 +1,27 @@
+<div class="details-page">
+  <button mat-raised-button color="primary" routerLink="/characters">Back</button>
+
+  @if (loading()) {
+    <p>Loading character details...</p>
+  }
+
+  @if (character(); as c) {
+    <mat-card class="details-card">
+      <div class="details-layout">
+        <img [src]="c.image || 'https://via.placeholder.com/300x400?text=No+Image'" [alt]="c.name" />
+
+        <div class="info">
+          <h2>{{ c.name }}</h2>
+          <p><strong>Species:</strong> {{ c.species }}</p>
+          <p><strong>House:</strong> {{ c.house || 'No House' }}</p>
+          <p><strong>Wizard:</strong> {{ c.wizard }}</p>
+          <p><strong>Ancestry:</strong> {{ c.ancestry || 'Unknown' }}</p>
+          <p><strong>Actor:</strong> {{ c.actor || 'Unknown' }}</p>
+          <p><strong>Wand Wood:</strong> {{ c.wand.wood || 'Unknown' }}</p>
+          <p><strong>Wand Core:</strong> {{ c.wand.core || 'Unknown' }}</p>
+          <p><strong>Wand Length:</strong> {{ c.wand.length ?? 'Unknown' }}</p>
+        </div>
+      </div>
+    </mat-card>
+  }
+</div>
