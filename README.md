@@ -1,4 +1,20 @@
 # 101469384LabTest2Comp3133
+# Lab Test 2b
+
+This is an Angular application that displays Harry Potter characters.
+
+## Features
+- Display character list
+- Filter by house
+- Component-based structure
+
+## Technologies
+- Angular
+- TypeScript
+- HTML/CSS
+
+## Notes
+Frontend application implemented successfully.
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.23.
 
